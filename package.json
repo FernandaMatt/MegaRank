@@ -1,0 +1,50 @@
+{
+  "name": "megarank",
+  "version": "1.0.0",
+  "description": "XP ranking and management made easy! MegaRank API - where ranks are high level, users conquer and clients don't suffer!",
+  "main": "index.js",
+  "scripts": {
+	"start": "nodemon -e ts,json src/server.ts"
+},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FernandaMatt/MegaRank.git"
+  },
+  "keywords": [
+    "API",
+    "Rank",
+    "XP",
+    "userranking",
+    "gamification",
+    "leaderboard",
+    "levelingup",
+    "levelup",
+    "rankingsystem",
+    "rankapi",
+    "rankingapi",
+    "userengagement"
+  ],
+  "author": "FernandaMatt",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FernandaMatt/MegaRank/issues"
+  },
+  "homepage": "https://github.com/FernandaMatt/MegaRank#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "multer": "^1.4.5-lts.1",
+    "pg": "^8.11.3",
+    "sequelize": "^6.35.2",
+    "validator": "^13.11.0"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^4.17.21",
+    "@types/multer": "^1.4.11",
+    "@types/node": "^20.10.5",
+    "@types/sequelize": "^4.28.19",
+    "@types/validator": "^13.11.7"
+  }
+}
