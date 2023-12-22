@@ -3,4 +3,4 @@ import dotenv from 'dotenv';
 
 dotenv.config();
 
-export const sequelize = new Sequelize(process.env.PG_CONNECT_URL as string);
+export const sequelize = new Sequelize(process.env.PG_CONNECT_URI as string);

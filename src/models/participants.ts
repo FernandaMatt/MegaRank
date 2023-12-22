@@ -1,30 +1,31 @@
 import { Model, DataTypes } from "sequelize";
 import { sequelize } from "../instances/pg";
 
-export interface UserInstance extends Model {
-  id: number;
+export interface ParticipantInstance extends Model {
+  id: string;
   name: string;
   surname: string;
   username: string;
+  xp: number;
   avatarurl: string;
   socialurl: string;
 }
 
-export const User = sequelize.define<UserInstance>(
-  "User",
+export const Participant = sequelize.define<ParticipantInstance>(
+  "Participant",
   {
     id: {
       primaryKey: true,
       type: DataTypes.UUID,
     },
     name: {
-      type: DataTypes.TEXT,
+      type: DataTypes.STRING,
     },
     surname: {
-      type: DataTypes.TEXT,
+      type: DataTypes.STRING,
     },
     username: {
-      type: DataTypes.TEXT,
+      type: DataTypes.STRING,
     },
     xp: {
       type: DataTypes.INTEGER,
@@ -33,7 +34,7 @@ export const User = sequelize.define<UserInstance>(
       type: DataTypes.TEXT,
     },
     socialurl: {
-      type: DataTypes.TEXT,
+      type: DataTypes.STRING,
     },
   },
   {

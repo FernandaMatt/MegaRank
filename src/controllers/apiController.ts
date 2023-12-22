@@ -42,7 +42,7 @@ export const updateParticipant = async (req: Request, res: Response) => {
 
 export const deleteParticipant = async (req: Request, res: Response) => {
 	let participant = await Participant.findByPk(req.params.id);
-	
+
 	if (participant) {
 		participant.destroy();
 		res.status(204).send();
